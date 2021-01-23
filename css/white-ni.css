@@ -1,0 +1,16 @@
+body{
+    background-color: #FFFFFF;
+}
+.kw-wrap, .img{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3),
+    -10px -10px 10px rgba(255, 255, 255, 1);
+    background-color: #f4f4f4;
+}
+.kw-wrap{
+    background-color: #ffffff;
+}
+.container .box .img:hover{
+    box-shadow: inset 10px 10px 15px rgba(0, 0, 0, 0.1),
+    inset -10px -10px 10px rgba(255, 255, 255, 1);
+    transition: box-shadow .2s ease-out;
+}
