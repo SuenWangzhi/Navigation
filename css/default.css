@@ -1,0 +1,38 @@
+html{
+    background: url('../images/background.jpg');
+    background-repeat:no-repeat;
+    background-size: 100% auto;
+    background-position: left 50%;
+}
+#logo,nav button{
+    background-color: rgba(0,0,0, 0.2);
+    color: #efefef;
+}
+.kw-wrap{
+    border: 1px solid #fff;
+}
+.kw-wrap,.btn-change,.kw{
+    background-color: rgba(255,255,255,0);
+}
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-moz-placeholder,
+input:-ms-input-placeholder{ 
+    color:#ddd;
+}
+.img,.website-icon{
+    border-radius: 50%;
+    width: 76px;
+    height: 76px;
+}
+.website-icon:hover{
+    box-shadow:0 0 8px #f1f1f1 ;
+}
+.website-name{
+    color: #eeeeee;
+}
+@media(max-width : 500px){
+    html{
+        background-size: auto 100%;
+    }
+}
