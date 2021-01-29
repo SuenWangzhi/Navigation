@@ -1,0 +1,32 @@
+body{
+    background-color: #f0f0f0;
+}
+nav button,#logo{
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow:  4px 4px 6px #aaaaaa,
+             -8px -8px 15px #ffffff;
+    color: #333;
+}
+.kw-wrap, .img{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4),
+    -5px -5px 4px rgba(255,255,255, 1);
+    background-color: #f0f0f0;
+}
+.kw-wrap,input{
+    background-color: #f7f7f7;
+}
+.img:hover{
+    box-shadow: inset 10px 10px 15px rgba(0, 0, 0, 0.1),
+    inset -10px -10px 10px rgba(255, 255, 255, 1);
+    transition: box-shadow .2s ease-out;
+}
+a>p{
+    color: #666666;
+}
+.website-icon{
+    margin-top: 15px;
+    border-radius: 2px;
+    box-shadow: 0 0 1px #aaaaaa;
+    line-height: 50px;
+    font-size: 22px;
+}
