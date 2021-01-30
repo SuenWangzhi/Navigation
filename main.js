@@ -175,14 +175,4 @@ $('.btn-change').click(function () {
         b = 1
     }
 });
-document.oncontextmenu = function () {
-    // return false;
-}
-$(".img").mousedown(function (e) {
-    //右键为3
-    if (3 == e.which) {
-        console.log("e.which");
-    } else if (1 == e.which) {
-    }
-})
 
