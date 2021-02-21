@@ -4,6 +4,9 @@ html{
     background-size: 100% auto;
     background-position: left 50%;
 }
+body{
+    background-color: rgba(2, 2, 2, .3);
+}
 #logo,nav button{
     background-color: rgba(0,0,0, 0.2);
     color: #efefef;
