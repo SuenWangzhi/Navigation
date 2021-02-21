@@ -1,5 +1,5 @@
 html{
-    background: url('../images/background.jpg');
+    background: url('https://api.dujin.org/bing/1920.php');
     background-repeat:no-repeat;
     background-size: 100% auto;
     background-position: left 50%;
