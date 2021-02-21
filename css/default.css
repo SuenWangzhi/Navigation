@@ -1,15 +1,9 @@
-html{
-    background: url('https://api.dujin.org/bing/1920.php');
-    background-repeat:no-repeat;
-    background-size: 100% auto;
-    background-position: left 50%;
-}
 body{
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0,0,0,.4);
 }
 #logo,nav button{
     background-color: rgba(0,0,0, 0.2);
-    color: #efefef;
+    color: #fefefe;
 }
 .kw-wrap{
     border: 1px solid #fff;
@@ -17,16 +11,14 @@ body{
 .kw-wrap,.btn-change,.kw{
     background-color: rgba(255,255,255,0);
 }
-input::-webkit-input-placeholder,
-input::-moz-placeholder,
-input:-moz-placeholder,
-input:-ms-input-placeholder{ 
-    color:#ddd;
-}
-.img,.website-icon{
+input::placeholder {
+    color: #eeeeee;
+  }
+.box>a,.website-icon{
     border-radius: 50%;
     width: 76px;
     height: 76px;
+    box-shadow:0 0 6px #3f3f3f ;
 }
 .website-icon:hover{
     box-shadow:0 0 8px #f1f1f1 ;

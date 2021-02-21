@@ -1,23 +1,23 @@
 body{
     background-color: #232323;
 }
-.kw-wrap, .img{
+.kw-wrap, .box>a{
     background: #191919;
     box-shadow:  5px 5px 10px #000000,
                  -5px -5px 10px #555555;
 }
-.img{
+.box>a{
     display:block;
     padding-top: 15px;
 }
-button{
+.btn-change{
     background-color: #333333;
 }
 input{
     background-color: #151515;
     color: #f0f0f0;
 }
-.siteList .box .img:hover{
+.siteList .box .box>a:hover{
     background: #191919;
     box-shadow: inset 5px 5px 7px #000000,
                 inset -5px -5px 3px #555555;

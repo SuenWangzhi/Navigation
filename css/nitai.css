@@ -7,19 +7,19 @@ nav button,#logo{
              -8px -8px 15px #ffffff;
     color: #333;
 }
-.kw-wrap, .img{
+.kw-wrap, .box>a{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4),
     -5px -5px 4px rgba(255,255,255, 1);
     background-color: #f0f0f0;
 }
-.img{
+.box>a{
     display:block;
     padding-top: 15px;
 }
 .kw-wrap,input{
     background-color: #f7f7f7;
 }
-.img:hover{
+.box>a:hover{
     box-shadow: inset 10px 10px 15px rgba(0, 0, 0, 0.1),
     inset -10px -10px 10px rgba(255, 255, 255, 1);
     transition: box-shadow .2s ease-out;
@@ -32,4 +32,7 @@ p{
     box-shadow: 0 0 1px #aaaaaa;
     font-size: 32px;
     line-height: 50px;
+}
+.btn-change{
+    background-color: #e4e4e4;
 }

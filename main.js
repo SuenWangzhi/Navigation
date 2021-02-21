@@ -38,8 +38,8 @@ const render = () => {
     hashMap.forEach((node, index) => {
         if (!node.img) {
             const $li = $(`<li class="box">
-                <a href="//${node.url}" target="_blank" class="img">
-                    <div class="website-icon color${node.bgColor}">
+                <a href="//${node.url}" target="_blank" class="img imgBox">
+                    <div class="website-icon websiteIcon color${node.bgColor}">
                         ${node.name[0]}
                     </div>
                 </a>
@@ -56,8 +56,8 @@ const render = () => {
             });
         } else {
             const $li = $(`<li class="box">
-            <a href="${node.url}" target="_blank" class="img">
-                <img class="website-icon"
+            <a href="${node.url}" target="_blank" class="img imgBox">
+                <img class="website-icon websiteIcon"
                 src="${node.img}" />
             </a>
             <svg class="delete-icon">
@@ -87,14 +87,6 @@ $('#lastLi').on('click', () => {
     render()
     localStorage.setItem('websites', JSON.stringify(hashMap))
 })
-$("input").focus(function () {
-    $("input").css('background', '#ffffff')
-    $(".kw-wrap").css('background', '#ffffff')
-})
-$("input").blur(function () {
-    $("input").css('background', 'rgba(255,255,255,0)')
-    $(".kw-wrap").css('background', 'rgba(255,255,255,0)')
-})
 let a = pageStyle || 1;
 const dog = () => {
     if (a === 1) {
@@ -120,6 +112,25 @@ const dog = () => {
     }
 }
 dog()
+$("input").focus(function () {
+    if (a === 1) {
+        $("input").css('background', '#ffffff')
+        $(".kw-wrap").css('background', '#ffffff')
+    } else if (a === 2) {
+        $("input").css('background', '#1a1a1a')
+        $(".kw-wrap").css('background', '#1a1a1a')
+    } else if (a === 3) {
+        $("input").css('background', '#fcfcfc')
+        $(".kw-wrap").css('background', '#fcfcfc')
+    } else if (a === 4) {
+        $("input").css('background', '#272727')
+        $(".kw-wrap").css('background', '#272727')
+    }
+})
+$("input").blur(function () {
+    $("input").css('background', 'rgba(255,255,255,0)')
+    $(".kw-wrap").css('background', 'rgba(255,255,255,0)')
+})
 $('.moon').click(function () {
     if (a === 1) {
         a = 2
@@ -153,7 +164,6 @@ $('.setting').click(function () {
 });
 let b = 1;
 $('.btn-change').click(function () {
-    console.log("dianji")
     if (b === 1) {
         $(".search-icon").html('<use xlink: href="#icon-Bing"></use>')
         $("form").attr('action', "https://cn.bing.com/search?");
@@ -173,6 +183,28 @@ $('.btn-change').click(function () {
         $("form").attr('action', "https://www.google.com/search");
         $("input").attr('name', "q");
         b = 1
+    }
+});
+let d = 1
+document.oncontextmenu = function () {
+    return false;
+}
+$(".img").mousedown(function (e) {
+    if (2 == e.button && d == 1) {
+        $(".imgBox").addClass("round");
+        $(".websiteIcon").addClass("round");
+        $(".delete-icon").css('display', "block");
+    }
+})
+$(".img").mouseup(function (e) {
+    d = 0
+})
+document.querySelector('html').addEventListener('mousedown', function (event) {
+    if (d === 0) {
+        $(".imgBox").removeClass("round");
+        $(".websiteIcon").removeClass("round");
+        $(".delete-icon").css('display', "none");
+        d = 1
     }
 });
 
