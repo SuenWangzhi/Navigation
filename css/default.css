@@ -5,7 +5,7 @@ html{
     background-position: left 50%;
 }
 body{
-    background-color: rgba(2, 2, 2, .3);
+    background-color: rgba(0, 0, 0, .2);
 }
 #logo,nav button{
     background-color: rgba(0,0,0, 0.2);
